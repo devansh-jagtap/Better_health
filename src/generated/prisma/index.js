@@ -172,7 +172,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\athar\\OneDrive\\Documents\\my-betterauth-ai-app\\src\\generated\\prisma",
+      "value": "C:\\Users\\devansh\\OneDrive\\Desktop\\ml\\New folder\\Disease_prediction\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -186,12 +186,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\athar\\OneDrive\\Documents\\my-betterauth-ai-app\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\devansh\\OneDrive\\Desktop\\ml\\New folder\\Disease_prediction\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.7.0",
