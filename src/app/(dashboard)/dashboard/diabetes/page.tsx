@@ -8,14 +8,14 @@ import { ResultCard } from "@/components/ui/result-card";
 
 // Define the form schema for diabetes prediction
 const formSchema = z.object({
-  pregnancies: z.coerce.number().min(0).max(20),
-  glucose: z.coerce.number().min(0).max(300),
-  bloodPressure: z.coerce.number().min(0).max(200),
-  skinThickness: z.coerce.number().min(0).max(100),
-  insulin: z.coerce.number().min(0).max(1000),
-  bmi: z.coerce.number().min(10).max(80),
-  diabetesPedigree: z.coerce.number().min(0).max(2.5),
-  age: z.coerce.number().min(18).max(120),
+  pregnancies: z.number().min(0).max(20),
+  glucose: z.number().min(0).max(300),
+  bloodPressure: z.number().min(0).max(200),
+  skinThickness: z.number().min(0).max(100),
+  insulin: z.number().min(0).max(1000),
+  bmi: z.number().min(10).max(80),
+  diabetesPedigree: z.number().min(0).max(2.5),
+  age: z.number().min(18).max(120),
   gender: z.enum(["0", "1"]), // Adding gender as the potential 9th feature
 });
 

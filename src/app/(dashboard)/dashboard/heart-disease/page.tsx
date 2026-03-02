@@ -46,16 +46,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Define the form schema with zod
 const formSchema = z.object({
-  age: z.coerce.number().min(20).max(100),
+  age: z.number().min(20).max(100),
   sex: z.enum(["0", "1"]), // 0 = female, 1 = male
   chestPainType: z.enum(["1", "2", "3", "4"]), // 1-4 values
-  restingBP: z.coerce.number().min(80).max(200),
-  cholesterol: z.coerce.number().min(100).max(600),
+  restingBP: z.number().min(80).max(200),
+  cholesterol: z.number().min(100).max(600),
   fastingBS: z.enum(["0", "1"]), // 0 = false, 1 = true
   restingECG: z.enum(["0", "1", "2"]), // 0, 1, 2 values
-  maxHR: z.coerce.number().min(60).max(220),
+  maxHR: z.number().min(60).max(220),
   exerciseAngina: z.enum(["0", "1"]), // 0 = no, 1 = yes
-  oldpeak: z.coerce.number().min(-3).max(10).step(0.1),
+  oldpeak: z.number().min(-3).max(10).step(0.1),
   stSlope: z.enum(["1", "2", "3"]), // 1 = upsloping, 2 = flat, 3 = downsloping
   majorVessels: z.enum(["0", "1", "2", "3"]),
   thal: z.enum(["0", "1", "2"]), // 0 = normal, 1 = fixed defect, 2 = reversible defect
